@@ -36,6 +36,27 @@ footer {
     padding: 1em 0;
 }
 
+.category-filters {
+    text-align: center;
+    margin: 1.5em 0 0.5em 0;
+}
+.filter-btn {
+    background: #fff;
+    border: 1px solid #333;
+    color: #333;
+    padding: 0.5em 1.2em;
+    margin: 0 0.2em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.filter-btn:hover, .filter-btn.active {
+    background: #333;
+    color: #fff;
+}
+
+
 /* Lightbox styles */
 .lightbox {
     display: none;

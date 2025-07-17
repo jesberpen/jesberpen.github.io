@@ -2,19 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Photography Portfolio</title>
+    <title>Jesus Berjano - Photography Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header>
+    <h1>Jesus Berjano</h1>
+    <p>2025</p>
+</header>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Amateur Photographer</p>
-    </header>
+        <!-- Category Filter Buttons (place above your <section class="gallery">...) -->
+    <div class="category-filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="landscapes">Landscapes</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="portrait">Portrait</button>
+        <button class="filter-btn" data-category="urban">Urban</button>
+    </div>
+
+    <!-- Example Gallery Section -->
     <section class="gallery">
-        <img src="Bee Mint.jpg" alt="Mint Bee" class="gallery-img">
-        <img src="DSC00080.jpg" alt="Afternoon Bath" class="gallery-img">
-        <img src="DSC00101.jpg" alt="Marygold" class="gallery-img">
-        <!-- Add more images -->
+        <img src="Bee Mint.jpg" alt="Mint Bee. 2025" class="gallery-img" data-category="nature">
+        <img src="DSC00080.jpg" alt="Afternoon Bath. 2025" class="gallery-img" data-category="portrait">
+        <img src="DSC00101.jpg" alt="Marygold. 2025" class="gallery-img" data-category="landscapes">
+        <!--img src="urban1.jpg" alt="City Lights" class="gallery-img" data-category="urban"-->
+        <!--img src="portrait1.jpg" alt="Smiling Friend" class="gallery-img" data-category="portrait"-->
+        <!-- Add more images with appropriate data-category -->
     </section>
 
     <!-- Lightbox Modal -->

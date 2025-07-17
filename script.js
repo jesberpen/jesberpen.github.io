@@ -1,3 +1,23 @@
+// CATEGORY FILTER SETUP
+const filterButtons = document.querySelectorAll('.filter-btn');
+const galleryImages = document.querySelectorAll('.gallery-img');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const category = this.getAttribute('data-category');
+    filterButtons.forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    galleryImages.forEach(img => {
+      if (category === 'all' || img.getAttribute('data-category') === category) {
+        img.style.display = '';
+      } else {
+        img.style.display = 'none';
+      }
+    });
+  });
+});
+
+// LIGHTBOX CODE (no changes needed; keep your current implementation)
 const images = document.querySelectorAll('.gallery-img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
